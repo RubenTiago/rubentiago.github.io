@@ -5,7 +5,11 @@
     <title>MobiQueue</title>
     <style >
         #div1{
-            background-color: red
+            background: white;
+            background-repeat: no-repeat;
+            background-size: auto;
+            border: 2px solid black;
+
         }
         #header {
 
@@ -18,10 +22,7 @@
             vertical-align: text-bottom;
             text-shadow: 2px 2px #000000;
         }
-        #div1, #div1 * {
-            background: rgba(0, 0,0, .5);
 
-        }
     </style>
 </head>
 <body background="./background.png">
@@ -30,11 +31,11 @@
             <b>Video Call</b>
         </div>
         <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-        <div id="div1" style="margin-left: 700px; margin-right: 400px; color: white;">
-            <p style="margin-left:30px; font-family: verdana; text-shadow: 2px 2px #000000;"><b>Insira o ID SKYPE:</b>
+        <div id="div1" style="margin-left: 700px; margin-right: 400px;">
+            <p style="margin-left:30px; font-family: verdana; text-shadow: 2px 2px #d3d3d3;"><b>Insira o ID SKYPE:</b>
             <input type="text" id="name" >
 
-            <div id="SkypeButton_Call_ruben.oliveira.silva_1">
+            <div id="SkypeButton_Call_ruben.oliveira.silva_1" style="margin-left:30px; ">
                 <script type="text/javascript">
                     Skype.ui({
                         "name": "chat",
@@ -43,13 +44,13 @@
                     });
                 </script>
             </div>
-            <div id="SkypeButton_Call_ruben.oliveira.silva_1">
+            <div id="SkypeButton_Call_ruben.oliveira.silva_1" style="margin-left:30px; ">
                 <script type="text/javascript">
                     Skype.ui({
                         "name": "call",
                         "element": "SkypeButton_Call_ruben.oliveira.silva_1",
                         "participants": ["live:danielcostinha7_1"]
-                    });
+                                  });
                 </script>
             </div>
         </div>
