@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MobiQueue</title>
+    <style >
+        #div1{
+            background-color: red
+        }
+        #header {
+
+            position: relative;
+            min-height: 100px;
+            font-size: 500%;
+            color: white;
+            font-family: verdana;
+            margin-left: 220px;
+            vertical-align: text-bottom;
+            text-shadow: 2px 2px #000000;
+        }
+        #div1, #div1 * {
+            background: rgba(0, 0,0, 1);
+
+        }
+    </style>
+</head>
+<body background="./background.png">
+        <div ><br><br><br><br><br></div>
+        <div id="header">
+            <b>Video Call</b>
+        </div>
+        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+        <div id="div1" style="margin-left: 700px; margin-right: 400px; color: white;">
+            <p style="margin-left:30px;"><b>Insira o ID SKYPE:</b>
+            <input type="text" id="name" >
+        </div>
+        <div id="div1" style="margin-left: 700px; margin-right: 400px;">
+            <div id="SkypeButton_Call_ruben.oliveira.silva_1">
+                <script type="text/javascript">
+                    Skype.ui({
+                        "name": "chat",
+                        "element": "SkypeButton_Call_ruben.oliveira.silva_1",
+                        "participants": ["live:danielcostinha7_1"]
+                    });
+                </script>
+            </div>
+            <div id="SkypeButton_Call_ruben.oliveira.silva_1">
+                <script type="text/javascript">
+                    Skype.ui({
+                        "name": "call",
+                        "element": "SkypeButton_Call_ruben.oliveira.silva_1",
+                        "participants": ["ruben.oliveira.silva"]
+                    });
+                </script>
+            </div>
+        </div>
+
+  </div>
+
+</body>
+
+</html>
