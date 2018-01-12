@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>MobiQueue</title>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">
         function sub() {
             var test =1;
@@ -50,36 +49,32 @@
 
 <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 <div id="div1" style="margin-left:16%; margin-right: 47%">
-
+    <br>
     <p style="margin-left:20px; font-size:150%;">Efetue a marcação:</p>
     <form style="font-weight: bold;">
           <table style=" margin-left:20px; text-align: left">
             <tr>
-                <td><input type="text" id="name" placeholder="Nome..."></td>
+                <td>Insira o seu nome:</td>
+                <td><input type="text" id="name" ></td>
 
             </tr>
             <tr>
-                <td><input type="phone" id="phone" placeholder="Telemóvel..."></td>
-            </tr>
-            <tr>
-                <td><input type="text" id="skype" placeholder="ID Skype..."></td>
-            </tr>
-            <tr>
-                <td>
-                    <select>
-                        <option></option>
-                        <option>Atendimento Geral:</option>
-                        <option>Levantar Documentos:</option>
-                        <option>Carimbar Documentos:</option>
-                    </select>
+                <td>Insira o seu nome:</td>
+                <td><input type="phone" id="phone"></td>
 
-                </td>
             </tr>
             <tr>
-                <td><input type="date" id="data" placeholder="Data..."></td>
+                <td>Insira o seu ID Skype:</td>
+                <td><input type="text" id="skype" ></td>
+
             </tr>
             <tr>
-                <td><input type="time" id="hora" placeholder="Hora..."></td>
+                <td>Data:</td>
+                <td><input type="date" id="data"></td>
+            </tr>
+            <tr>
+                <td>Hora:</td>
+                <td><input type="time" id="hora"></td>
             </tr>
         </table>
         <p></p>
@@ -87,7 +82,7 @@
         <br><br>
     </form>
 </div>
-<br>
+<br><br>
 </div>
 
 </body>
