@@ -17,10 +17,11 @@ function animateClock(span){
   },700);
 }
 
-function startTimer(id, deadline){
+function startTimer(id, deadline, n){
   var timerInterval = setInterval(function(){
     var clock = document.getElementById(id);
     var timer = updateTimer(deadline);
+
 
     clock.innerHTML = '<span>' + timer.days + '</span>'
                     + '<span>' + timer.hours + '</span>'
@@ -36,6 +37,7 @@ function startTimer(id, deadline){
 
     //check for end of timer
     if(timer.total < 1){
+      n=1;
       clearInterval(timerInterval);
       clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
     }
@@ -47,5 +49,6 @@ function startTimer(id, deadline){
 
 window.onload = function(){
   var deadline = new Date("January 15, 2018 9:30:00");
-  startTimer("clock", deadline);
+  var count =0;
+  startTimer("clock", deadline, count);
 };
