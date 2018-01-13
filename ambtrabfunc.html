@@ -5,11 +5,11 @@
     <title>MobiQueue</title>
     <script type="text/javascript">
                     function ler({
-                    var b = document.getElementByID("name").value;
+                    private b = document.getElementByID("name").value;
                     alert("Escreveste" + b);
                     });
     </script>
-    <style >
+    <style type="text/css" >
         #div1{
             background: white;
             background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 
                 <input type="text" id="name" >
 
-                <input type="submit" onclick="ler">
+                <input type="submit" onclick="ler()">
 
             <div id="SkypeButton_Call_ruben.oliveira.silva_1" style="margin-left:30px; ">
                 <script type="text/javascript">
@@ -63,7 +63,7 @@
                     Skype.ui({
                         "name": "call",
                         "element": "SkypeButton_Call_ruben.oliveira.silva_1",
-                        "participants": ["carla.dias1997"]
+                        "participants": [document.getElementById("name").value]
 
                                   });
                 </script>
