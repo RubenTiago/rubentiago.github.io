@@ -10,7 +10,18 @@
                     });
     </script>
     <style type="text/css" >
+        #divmain{
+            margin: 15% auto;
+        }
+
         #div1{
+            background: white;
+            background-repeat: no-repeat;
+            background-size: auto;
+            border: 2px solid black;
+
+        }
+        #div2{
             background: white;
             background-repeat: no-repeat;
             background-size: auto;
@@ -21,7 +32,7 @@
 
             position: relative;
             min-height: 100px;
-            font-size: 500%;
+            font-size: 75px;
             color: white;
             font-family: verdana;
             margin-left: 220px;
@@ -29,9 +40,10 @@
             text-shadow: 2px 2px #000000;
         }
 
+
     </style>
 </head>
-<body background="./background.png">
+<body id=divmain" background="./background.png">
 
         <div ><br><br><br><br><br></div>
 
@@ -40,37 +52,40 @@
         </div>
 
         <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-
-        <div id="div1" style="margin-left: 700px; margin-right: 400px;">
-            <p style="margin-left:30px; font-family: verdana; text-shadow: 2px 2px #d3d3d3;"><b>Insira o ID SKYPE:</b>
-
-                <input type="text" id="name" >
-
-                <input type="submit" onclick="ler()">
-
-            <div id="SkypeButton_Call_ruben.oliveira.silva_1" style="margin-left:30px; ">
-                <script type="text/javascript">
-                    Skype.ui({
-                        "name": "chat",
-                        "element": "SkypeButton_Call_ruben.oliveira.silva_1",
-                        "participants": ["live:danielcostinha7_1"]
-                    });
-                </script>
+        <div with="600px" style="margin-left: 228px">
+            <div id="div2"style="float: left; width: 400px;">
+                <iframe src="https://www.google.pt" style="float: left; width: 400px; height= 00px"></iframe>
             </div>
+            <div id="div1" style="float: left; width: 230px;">
+                <p style="margin-left:30px; font-family: verdana; text-shadow: 2px 2px #d3d3d3;"><b>Insira o ID SKYPE:</b>
 
-            <div id="SkypeButton_Call_ruben.oliveira.silva_1" style="margin-left:30px; ">
-                <script type="text/javascript">
-                    Skype.ui({
+                    <input type="text" id="name" >
+
+                    <input type="submit" onclick="ler()">
+
+                <div id="SkypeButton_Call_ruben.oliveira.silva_1" style="margin-left:30px; ">
+                    <script type="text/javascript">
+                        Skype.ui({
+                            "name": "chat",
+                            "element": "SkypeButton_Call_ruben.oliveira.silva_1",
+                            "participants": ["live:danielcostinha7_1"]
+                           });
+                    </script>
+                </div>
+
+                <div id="SkypeButton_Call_ruben.oliveira.silva_1" style="margin-left:30px; ">
+                    <script type="text/javascript">
+                        Skype.ui({
                         "name": "call",
                         "element": "SkypeButton_Call_ruben.oliveira.silva_1",
                         "participants": [document.getElementById("name").value]
 
                                   });
-                </script>
+                    </script>
+                </div>
             </div>
-        </div>
 
-  </div>
+        </div>
 
 </body>
 
