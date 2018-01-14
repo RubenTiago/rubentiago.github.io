@@ -8,7 +8,9 @@
             var test =1;
             if(test==1){
                 alert("Dados Submetidos Com Sucesso");
+                test = 0;
             }
+
         }
     </script>
     <style >
@@ -41,8 +43,8 @@
     </style>
 </head>
 
-<body background="./background.png">
-<div ><br><br><br><br><br></div>
+<body background="./fundo12.png">
+<div style="height:300px;"><br><br><br><br><br></div>
 <div id="header">
     <b>Video Call</b>
 </div>
@@ -51,18 +53,14 @@
 <div id="div1" style="margin-left:16%; margin-right: 47%">
     <br>
     <p style="margin-left:20px; font-size:150%;">Efetue a marcação:</p>
-    <form style="font-weight: bold;">
+    <form method="get"  action="./countdown.html" style="font-weight: bold;">
           <table style=" margin-left:20px; text-align: left">
             <tr>
                 <td>Insira o seu nome:</td>
                 <td><input type="text" id="name" ></td>
 
             </tr>
-            <tr>
-                <td>Insira o seu nome:</td>
-                <td><input type="phone" id="phone"></td>
 
-            </tr>
             <tr>
                 <td>Insira o seu ID Skype:</td>
                 <td><input type="text" id="skype" ></td>

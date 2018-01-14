@@ -1,12 +1,18 @@
 <html>
   <head>
+    <meta charset="UTF-8">
+    <title>MobiQueue</title>
+    <style>
+        .div1{
+            background: white;
+            border: 2px solid black;
+            }
+    </style>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body background="./fundo12.png">
-    <div id="del-countdown">
-      <h1>Aguarde, o seu agendamento foi</h1>
-      <br>
-      <h1>concluido. Tempo restante ate o contactar:</h1>
+    <div id="del-countdown" class="div1">
+      <h1>Aguarde, o seu agendamento foi concluido. Tempo restante ate o contactar:</h1>
       <div id="clock"></div>
       <div id="units">
         <span>Days</span>
@@ -14,7 +20,9 @@
         <span>Minutes</span>
         <span>Seconds</span>
       </div>
+      <button style="margin: 15% auto; with=150px; height=120; font-size: 20px;" onclick="" >Seguir</button>
     </div>
     <script src="countdown.js"></script>
+
   </body>
 </html>
