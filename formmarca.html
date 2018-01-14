@@ -14,21 +14,10 @@
         }
     </script>
     <style>
-        #div1{
-            background: white;
-            background-repeat: no-repeat;
-            background-size: auto;
-            border: 2px solid black;
-            position: relative;
-            min-height: 130px;
-            font-size: ;
-            font-weight: bold;
-            font-family: verdana;
-            margin-left: 320px;
-            vertical-align: text-middle;
         .div1{
             background: #ccc;
             border: 2px solid black;
+            font-size: 25px;
             }
        #header {
 
@@ -43,15 +32,13 @@
             text-shadow: 2px 2px #000000;
         }
     </style>
+
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body background="./fundo12.png">
-<div id="header">
-    <b>Efectue a sua marcação:</b>
-</div>
-
-<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-<div id="div1" style="margin-left:16%; margin-right: 47%">
+<div id="header"><b>Efectue a marcação:</b></div>
+<div id="del-countdown" class="div1">
        <form method="get"  action="./countdown.html" style="font-weight: bold;">
           <table style=" margin-left:20px; text-align: left">
             <tr>
@@ -70,12 +57,16 @@
                 <td><input type="date" id="data"></td>
             </tr>
             <tr>
-                <td>Hora:</td>
-                <td><input type="time" id="hora"></td>
+              <td>Hora:</td>
+              <td><input type="time" id="hora"></td>
+            </tr>
+            <tr>
+                <td style="vertical-align: text-top;">Breve descrição:</td>
+                <td><textarea rows="4" id="desc"></textarea></td>
             </tr>
         </table>
         <p></p>
-        <input type="submit" id="submit" value="Submeter" style="margin-left:400px;" onclick="sub()">
+        <input type="submit" id="submit" value="Submeter" style="margin-left: 700px; with=150px; height=120; font-size: 20px;" onclick="sub()">
         <br><br>
     </form>
 </div>

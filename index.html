@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MobiQueue</title>
+    <script type="text/javascript">
+        function sub() {
+            var test =1;
+            if(test==1){
+                alert("Dados Submetidos Com Sucesso");
+                test = 0;
+            }
+
+        }
+    </script>
+    <style type="text/ccs">
+        #div1{
+            background: white;
+            background-repeat: no-repeat;
+            background-size: auto;
+            border: 2px solid black;
+            position: relative;
+            min-height: 130px;
+            font-size: ;
+            font-weight: bold;
+            font-family: verdana;
+            margin-left: 320px;
+            vertical-align: text-middle;
+
+            }
+       .eader {
+
+            padding-top: 370px;
+            position: relative;
+            min-height: 100px;
+            font-size: 500%;
+            color: white;
+            font-family: verdana;
+            margin-left: 220px;
+            vertical-align: text-bottom;
+            text-shadow: 2px 2px #000000;
+        }
+    </style>
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+</head>
+<body background="./fundo12.png">
+<div class="eader"><b>Efectue a sua marcação:</b></div>
+    <div id="div1" style="margin-left:16%; margin-right: 47%">
+        <form method="get"  action="./countdown.html" style="font-weight: bold;">
+            <table style=" margin-left:20px; text-align: left">
+                <tr>
+                    <td>Insira o seu nome:</td>
+                    <td><input type="text" id="name" ></td>
+
+                </tr>
+                <tr>
+                    <td>Insira o seu ID Skype:</td>
+                    <td><input type="text" id="skype" ></td>
+                </tr>
+                <tr>
+                    <td>Data:</td>
+                    <td><input type="date" id="data"></td>
+                </tr>
+                <tr>
+                    <td>Hora:</td>
+                    <td><input type="time" id="hora"></td>
+                </tr>
+                <tr>
+                    <td>Breve descrição:</td>
+                    <td><textarea rows="4" id="desc"></textarea></td>
+                </tr>
+            </table>
+        <input type="submit" id="submit" value="Submeter" style="margin-left:400px;" onclick="sub()">
+    </form>
+</div>
+
+</div>
+
+</body>
+</html>
