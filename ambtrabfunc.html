@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>MobiQueue</title>
     <script type="text/javascript">
-                    function ler({
+                    function ler(){
                     private b = document.getElementByID("name").value;
                     alert("Escreveste" + b);
-                    });
+                    }
     </script>
     <style type="text/css" >
         #divmain{
@@ -47,12 +47,12 @@
 <body id=divmain" background="./background.png">
         <div id="header"><b>Video Call</b></div>
         <div with="600px" style="margin-left: 215px ">
-            <div id="div2"style="float: left; width: 400px;">
+            <div id="div2"style="float: left; width: 461px;">
                 <p style=" font-family: verdana; text-shadow: 2px 2px #d3d3d3;"><b>Listagem de marcações:</b>
-                <iframe src="https://www.google.pt" style="float: left; width: 400px; height= 300px;"></iframe>
+                    <iframe width="461" height="200" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=3C03D68B0392802E%2120220&authkey=%21ACXD-NAAFJzzdHc&em=2&wdAllowInteractivity=False&Item=Tabela1&wdInConfigurator=True"></iframe>
             </div>
             <div id="div1" style="float: left; width: 230px;">
-                <form method="post" onsubmit="ler()" style="margin-left:30px; font-family: verdana; text-shadow: 2px 2px #d3d3d3;">
+                <form method="get" onsubmit="ler();" style="margin-left:30px; font-family: verdana; text-shadow: 2px 2px #d3d3d3;">
                     <p><b>Insira o ID SKYPE:</b>
                     <input type="text" id="name" >
                     <input type="submit" value="Submeter">
