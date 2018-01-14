@@ -7,12 +7,26 @@
             background: white;
             border: 2px solid black;
             }
+         #header {
+
+            padding-top: 370px;
+            position: relative;
+            min-height: 100px;
+            font-size: 500%;
+            color: white;
+            font-family: verdana;
+            margin-left: 220px;
+            vertical-align: text-bottom;
+            text-shadow: 2px 2px #000000;
+        }
+
     </style>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body background="./fundo12.png">
+  <div id="header"><b>Aguarde...</b></div>
     <div id="del-countdown" class="div1">
-      <h1>Aguarde, o seu agendamento foi concluido. Tempo restante ate o contactar:</h1>
+      <h1>O seu agendamento foi concluido. Tempo restante ate o contactar:</h1>
       <div id="clock"></div>
       <div id="units">
         <span>Days</span>
@@ -20,7 +34,11 @@
         <span>Minutes</span>
         <span>Seconds</span>
       </div>
-      <button style="margin: 15% auto; with=150px; height=120; font-size: 20px;" onclick="" >Seguir</button>
+      <form  style="margin-left:100px;" method="get" action=./a.andar.html>
+
+
+        <button style="margin: 15% auto; with=150px; height=120; font-size: 20px;">Seguir</button>
+      </form>
     </div>
     <script src="countdown.js"></script>
 
